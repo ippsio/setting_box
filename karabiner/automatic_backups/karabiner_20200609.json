@@ -449,45 +449,6 @@
                                 "type": "basic"
                             }
                         ]
-                    },
-                    {
-                        "description": "[50:iTerm_jis]: Send Cmd+'+' on iTerm2",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "com.googlecode.iterm2"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    },
-                                    {
-                                        "keyboard_types": [
-                                            "jis"
-                                        ],
-                                        "type": "keyboard_type_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "semicolon",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "command",
-                                            "shift"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "keypad_plus",
-                                        "modifiers": [
-                                            "left_command"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
                     }
                 ]
             },
