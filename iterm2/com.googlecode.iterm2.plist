@@ -197,8 +197,16 @@
 	<false/>
 	<key>HideTabNumber</key>
 	<true/>
+	<key>Hotkey</key>
+	<false/>
+	<key>HotkeyChar</key>
+	<integer>32</integer>
+	<key>HotkeyCode</key>
+	<integer>49</integer>
 	<key>HotkeyMigratedFromSingleToMulti</key>
 	<true/>
+	<key>HotkeyModifiers</key>
+	<integer>524288</integer>
 	<key>IRMemory</key>
 	<integer>4</integer>
 	<key>LeftTabBarWidth</key>
@@ -275,6 +283,15 @@
 		<key>TB Is Shown</key>
 		<integer>1</integer>
 	</dict>
+	<key>NSUserKeyEquivalents</key>
+	<dict>
+		<key>Close</key>
+		<string>@~^$w</string>
+		<key>Close Terminal Window</key>
+		<string>@~^$q</string>
+		<key>Reset</key>
+		<string>@~^$r</string>
+	</dict>
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>40 83 224 275 0 0 1440 877 </string>
 	<key>NSWindow Frame NSFontPanel</key>
@@ -284,7 +301,7 @@
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>2200 576 400 129 1440 -137 1920 1080 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>439 1416 620 392 -211 900 1920 1080 </string>
+	<string>2470 1416 620 392 1820 900 1920 1080 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>-1651 -59 606 469 -1920 -180 1920 1057 </string>
 	<key>NSWindow Frame SharedPreferences</key>
@@ -292,9 +309,9 @@
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>189 83 592 584 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>540 358 900 475 0 0 1440 877 </string>
+	<string>40 0 505 375 0 0 1650 1050 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>2518 469 585 450 1440 -137 1920 1080 </string>
+	<string>1760 -129 1507 869 1440 -137 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>590 458 585 450 0 0 1650 1050 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
@@ -864,7 +881,7 @@
 				</dict>
 			</dict>
 			<key>Mouse Reporting</key>
-			<true/>
+			<false/>
 			<key>Name</key>
 			<string>Default</string>
 			<key>Non Ascii Font</key>
@@ -884,7 +901,7 @@
 			<key>Rows</key>
 			<integer>25</integer>
 			<key>Screen</key>
-			<integer>-1</integer>
+			<integer>-2</integer>
 			<key>Scrollback Lines</key>
 			<integer>0</integer>
 			<key>Selected Text Color</key>
@@ -920,7 +937,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.0</real>
+			<real>0.14440831218274111</real>
 			<key>Unlimited Scrollback</key>
 			<true/>
 			<key>Use Bold Font</key>
@@ -938,24 +955,25 @@
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
-			<integer>0</integer>
+			<integer>1</integer>
 			<key>Working Directory</key>
 			<string></string>
 		</dict>
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
-		<string>3.3.6</string>
-		<string>3.3.8</string>
-		<string>3.3.4</string>
-		<string>3.3.1</string>
-		<string>3.3.3</string>
 		<string>3.3.5</string>
-		<string>3.3.7</string>
+		<string>3.3.3</string>
+		<string>3.3.1</string>
+		<string>3.3.8</string>
+		<string>3.3.6</string>
+		<string>3.3.11</string>
+		<string>3.3.4</string>
+		<string>3.3.2</string>
 		<string>3.3.9</string>
 		<string>3.2.9</string>
 		<string>3.3.0</string>
-		<string>3.3.2</string>
+		<string>3.3.7</string>
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
@@ -974,9 +992,9 @@
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {1440, 900}}</string>
+		<string>{{0, 0}, {1650, 1050}}</string>
 		<key>topLeft</key>
-		<string>{388, 855}</string>
+		<string>{373, 969}</string>
 	</dict>
 	<key>NoSyncHaveRequestedFullDiskAccess</key>
 	<true/>
@@ -987,7 +1005,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>571023064.71182895</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>44</integer>
+	<integer>51</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1711,8 +1729,12 @@
 		<string>0005</string>
 		<string>0006</string>
 	</array>
-	<key>OpenBookmark</key>
+	<key>OpenArrangementAtStartup</key>
 	<false/>
+	<key>OpenBookmark</key>
+	<true/>
+	<key>OpenNoWindowsAtStartup</key>
+	<true/>
 	<key>OpenTmuxWindowsIn</key>
 	<integer>0</integer>
 	<key>PMPrintingExpandedStateForPrint2</key>
@@ -1763,13 +1785,15 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-05-27T01:12:24Z</date>
+	<date>2020-06-16T03:19:05Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateGroupIdentifier</key>
-	<integer>2543201038</integer>
+	<integer>1502823664</integer>
 	<key>SUUpdateRelaunchingMarker</key>
 	<false/>
+	<key>Secure Input</key>
+	<true/>
 	<key>ShowFullScreenTabBar</key>
 	<true/>
 	<key>ShowNewOutputIndicator</key>
@@ -1801,7 +1825,7 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.3.9</string>
+	<string>3.3.11</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>7</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
