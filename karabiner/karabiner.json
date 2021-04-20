@@ -566,7 +566,8 @@
                                     {
                                         "key_code": "japanese_kana"
                                     }
-                                ]
+                                ],
+                                "type": "basic"
                             },
                             {
                                 "conditions": [
@@ -596,7 +597,8 @@
                                     {
                                         "key_code": "japanese_eisuu"
                                     }
-                                ]
+                                ],
+                                "type": "basic"
                             }
                         ]
                     }
