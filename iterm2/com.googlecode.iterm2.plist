@@ -8,16 +8,6 @@
 	<true/>
 	<key>AlwaysAcceptFirstMouse</key>
 	<true/>
-	<key>AppleAntiAliasingThreshold</key>
-	<integer>1</integer>
-	<key>ApplePressAndHoldEnabled</key>
-	<false/>
-	<key>AppleScrollAnimationEnabled</key>
-	<integer>0</integer>
-	<key>AppleSmoothFixedFontsSizeThreshold</key>
-	<integer>1</integer>
-	<key>AppleWindowTabbingMode</key>
-	<string>manual</string>
 	<key>AutoHideTmuxClientSession</key>
 	<false/>
 	<key>CloseBookmarksWindowAfterOpening</key>
@@ -30,6 +20,8 @@
 	<false/>
 	<key>DimOnlyText</key>
 	<true/>
+	<key>DisableFullscreenTransparency</key>
+	<false/>
 	<key>DoubleClickPerformsSmartSelection</key>
 	<false/>
 	<key>FocusFollowsMouse</key>
@@ -70,6 +62,15 @@
 			<integer>10</integer>
 			<key>Text</key>
 			<string>[3~</string>
+		</dict>
+		<key>0x6f-0x100000-0x1f</key>
+		<dict>
+			<key>Action</key>
+			<integer>13</integer>
+			<key>Label</key>
+			<string></string>
+			<key>Text</key>
+			<string></string>
 		</dict>
 		<key>0x9-0x40000</key>
 		<dict>
@@ -197,6 +198,8 @@
 	<true/>
 	<key>HideMenuBarInFullscreen</key>
 	<true/>
+	<key>HideScrollbar</key>
+	<false/>
 	<key>HideTab</key>
 	<false/>
 	<key>HideTabCloseButton</key>
@@ -397,18 +400,18 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.0</real>
+				<real>0.1390838623046875</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.0</real>
+				<real>0.137847900390625</real>
 				<key>Red Component</key>
-				<real>0.0</real>
+				<real>0.0027923583984375</real>
 			</dict>
 			<key>Background Image Location</key>
 			<string></string>
 			<key>Blinking Cursor</key>
-			<false/>
+			<true/>
 			<key>Blur</key>
 			<false/>
 			<key>Bold Color</key>
@@ -465,6 +468,8 @@
 			<key>Description</key>
 			<string>Default</string>
 			<key>Disable Window Resizing</key>
+			<true/>
+			<key>Draw Powerline Glyphs</key>
 			<true/>
 			<key>Flashing Bell</key>
 			<false/>
@@ -784,9 +789,11 @@
 			<key>Name</key>
 			<string>Default</string>
 			<key>Non Ascii Font</key>
-			<string>Monaco 12</string>
+			<string>HackGen35Console-Regular 11</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
+			<key>Non-ASCII Ligatures</key>
+			<false/>
 			<key>Normal Font</key>
 			<string>SourceCodeProForPowerline-Regular 11</string>
 			<key>Only The Default BG Color Uses Transparency</key>
@@ -840,7 +847,9 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.25792552347715736</real>
+			<real>0.24307780774111676</real>
+			<key>Unicode Version</key>
+			<integer>9</integer>
 			<key>Unlimited Scrollback</key>
 			<true/>
 			<key>Use Bold Font</key>
@@ -854,9 +863,9 @@
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Use Non-ASCII Font</key>
-			<false/>
+			<true/>
 			<key>Vertical Spacing</key>
-			<real>1</real>
+			<real>1.1000000000000001</real>
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
@@ -924,6 +933,8 @@
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
 	<real>0.3445037059294872</real>
+	<key>StatusBarPosition</key>
+	<integer>1</integer>
 	<key>StretchTabsToFillBar</key>
 	<true/>
 	<key>SuppressRestartAnnouncement</key>
@@ -933,7 +944,7 @@
 	<key>TabStyleWithAutomaticOption</key>
 	<integer>3</integer>
 	<key>TabViewType</key>
-	<integer>0</integer>
+	<integer>1</integer>
 	<key>TmuxUsesDedicatedProfile</key>
 	<false/>
 	<key>TripleClickSelectsFullWrappedLines</key>
@@ -946,6 +957,8 @@
 	<false/>
 	<key>VisualIndicatorForEsc</key>
 	<false/>
+	<key>WindowNumber</key>
+	<true/>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>findMode_iTerm</key>

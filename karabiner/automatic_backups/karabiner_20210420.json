@@ -536,67 +536,21 @@
                         ]
                     },
                     {
-                        "description": "[61:Kana-key] Kana-key toggles Kana-Eisuu.",
+                        "description": "[61:kana toggles IME.",
                         "manipulators": [
                             {
-                                "conditions": [
-                                    {
-                                        "input_sources": [
-                                            {
-                                                "language": "ja"
-                                            }
-                                        ],
-                                        "type": "input_source_unless"
-                                    }
-                                ],
                                 "from": {
-                                    "key_code": "japanese_kana",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
+                                    "key_code": "japanese_kana"
                                 },
                                 "to": [
                                     {
-                                        "key_code": "japanese_kana"
-                                    }
-                                ],
-                                "to_if_alone": [
-                                    {
-                                        "key_code": "japanese_kana"
-                                    }
-                                ]
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "input_sources": [
-                                            {
-                                                "language": "ja"
-                                            }
-                                        ],
-                                        "type": "input_source_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "japanese_kana",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
+                                        "key_code": "space",
+                                        "modifiers": [
+                                            "left_command"
                                         ]
                                     }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "japanese_kana"
-                                    }
                                 ],
-                                "to_if_alone": [
-                                    {
-                                        "key_code": "japanese_eisuu"
-                                    }
-                                ]
+                                "type": "basic"
                             }
                         ]
                     }
