@@ -34,6 +34,52 @@
           "type": "basic"
         }
       ]
+    },
+
+    {
+      "description": "[10:COMMAND]: + [w/i,o/t/p/s/n/,/] on [terminal] deactivate default key-shortcuts.",
+      "manipulators": [
+        {
+          "from": {"key_code": "w", "modifiers": {"mandatory": ["command"], "optional": ["any"]}},
+          "type": "basic",
+          "conditions": [ { "type": "frontmost_application_if", "bundle_identifiers": [ "^com\\.apple\\.Terminal" ] } ]
+        },
+        {
+          "from": {"key_code": "i", "modifiers": {"mandatory": ["command"], "optional": ["any"]}},
+          "type": "basic",
+          "conditions": [ { "type": "frontmost_application_if", "bundle_identifiers": [ "^com\\.apple\\.Terminal" ] } ]
+        },
+        {
+          "from": {"key_code": "o", "modifiers": {"mandatory": ["command"], "optional": ["any"]}},
+          "type": "basic",
+          "conditions": [ { "type": "frontmost_application_if", "bundle_identifiers": [ "^com\\.apple\\.Terminal" ] } ]
+        },
+        {
+          "from": {"key_code": "t", "modifiers": {"mandatory": ["command"], "optional": ["any"]}},
+          "type": "basic",
+          "conditions": [ { "type": "frontmost_application_if", "bundle_identifiers": [ "^com\\.apple\\.Terminal" ] } ]
+        },
+        {
+          "from": {"key_code": "p", "modifiers": {"mandatory": ["command"], "optional": ["any"]}},
+          "type": "basic",
+          "conditions": [ { "type": "frontmost_application_if", "bundle_identifiers": [ "^com\\.apple\\.Terminal" ] } ]
+        },
+        {
+          "from": {"key_code": "s", "modifiers": {"mandatory": ["command"], "optional": ["any"]}},
+          "type": "basic",
+          "conditions": [ { "type": "frontmost_application_if", "bundle_identifiers": [ "^com\\.apple\\.Terminal" ] } ]
+        },
+        {
+          "from": {"key_code": "n", "modifiers": {"mandatory": ["command"], "optional": ["any"]}},
+          "type": "basic",
+          "conditions": [ { "type": "frontmost_application_if", "bundle_identifiers": [ "^com\\.apple\\.Terminal" ] } ]
+        },
+        {
+          "from": {"key_code": "comma", "modifiers": {"mandatory": ["command"], "optional": ["any"]}},
+          "type": "basic",
+          "conditions": [ { "type": "frontmost_application_if", "bundle_identifiers": [ "^com\\.apple\\.Terminal" ] } ]
+        }
+      ]
     }
   ]
 }
