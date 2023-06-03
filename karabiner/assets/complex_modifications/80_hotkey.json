@@ -51,6 +51,35 @@
           "to": [ { "shell_command": "open -a '/Applications/Microsoft Edge.app'" } ]
         }
       ]
+    },
+    {
+      "description": "[86:right_option double press  then CTRL-UP (I assign this bind to start Mission Control)]",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": { "key_code": "right_option" },
+          "to": [ { "key_code": "up_arrow", "modifiers": [ "left_control" ] } ],
+          "parameters": {
+            "basic.to_if_alone_timeout_milliseconds": 100,
+            "basic.to_if_held_down_threshold_milliseconds": 10
+          },
+          "conditions": [ { "type": "variable_if", "name": "var_right_option_key", "value": 1 } ] },
+        {
+          "type": "basic",
+          "from": { "key_code": "right_option", "modifiers": { "optional": [ "any" ] } },
+          "to": [ { "set_variable": { "name": "var_right_option_key", "value": 1 } }, { "key_code": "right_option" } ],
+          "parameters": {
+            "basic.to_if_alone_timeout_milliseconds": 100,
+            "basic.to_if_held_down_threshold_milliseconds": 10,
+            "basic.to_delayed_action_delay_milliseconds": 200
+          },
+          "to_delayed_action": {
+            "to_if_invoked": [ { "set_variable": { "name": "var_right_option_key", "value": 0 } } ],
+            "to_if_canceled": [ { "set_variable": { "name": "var_right_option_key", "value": 0 } } ]
+          },
+          "conditions": [ { "type": "variable_if", "name": "var_right_option_key", "value": 0 } ]
+        }
+      ]
     }
   ]
 }

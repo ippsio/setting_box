@@ -7,22 +7,22 @@
         {
           "type": "basic",
           "from": { "key_code": "k", "modifiers": { "mandatory": [ "left_option" ], "optional": [ "any" ] } },
-          "to": [ { "mouse_key": { "y": -1536 } } ]
+          "to": [ { "mouse_key": { "y": -1000 } } ]
         },
         {
           "type": "basic",
           "from": { "key_code": "h", "modifiers": { "mandatory": [ "left_option" ], "optional": [ "any" ] } },
-          "to": [ { "mouse_key": { "x": -1536 } } ]
+          "to": [ { "mouse_key": { "x": -1000 } } ]
         },
         {
           "type": "basic",
           "from": { "key_code": "j", "modifiers": { "mandatory": [ "left_option" ], "optional": [ "any" ] } },
-          "to": [ { "mouse_key": { "y": 1536 } } ]
+          "to": [ { "mouse_key": { "y": 1000 } } ]
         },
         {
           "type": "basic",
           "from": { "key_code": "l", "modifiers": { "mandatory": [ "left_option" ], "optional": [ "any" ] } },
-          "to": [ { "mouse_key": { "x": 1536 } } ]
+          "to": [ { "mouse_key": { "x": 1000 } } ]
         },
         {
           "type": "basic",
@@ -33,6 +33,16 @@
           "type": "basic",
           "from": { "key_code": "m", "modifiers": { "mandatory": [ "left_option" ], "optional": [ "any" ] } },
           "to": [ { "pointing_button": "button2" } ]
+        }
+      ]
+    },
+    {
+      "description": "[31:Elecom M-DUX50BK]:",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": { "key_code": "f1", "modifiers": { "mandatory": [ "left_command", "left_option", "left_shift" ], "optional": [ "any" ] } },
+          "to": [ { "pointing_button": "button3" } ]
         }
       ]
     }
