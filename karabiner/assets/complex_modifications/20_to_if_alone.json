@@ -38,7 +38,7 @@
     ]
   },
   {
-    "description": "32: to_if_alone Option",
+    "description": "22: to_if_alone Option",
     "manipulators": [
       {
         "type": "basic",
