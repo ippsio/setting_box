@@ -14,11 +14,11 @@
       ]
     },
     {
-      "description": "12: command to_if_alone toggle eisuu/kana",
+      "description": "12: command(left) + space toggle eisuu/kana",
       "manipulators": [
         {
           "type": "basic",
-          "from": { "key_code": "left_command" },
+          "from": {"key_code": "space", "modifiers": {"mandatory": ["command"], "optional": ["any"]}},
           "to": [{ "key_code": "left_command", "lazy": true }],
           "to_if_held_down": [{ "key_code": "left_command" }],
           "conditions": [{ "type": "input_source_if", "input_sources": [{ "language": "ja" }] }],
@@ -26,12 +26,17 @@
         },
         {
           "type": "basic",
-          "from": { "key_code": "left_command" },
+          "from": {"key_code": "space", "modifiers": {"mandatory": ["command"], "optional": ["any"]}},
           "to": [{ "key_code": "left_command", "lazy": true }],
           "to_if_held_down": [{ "key_code": "left_command" }],
           "conditions": [{ "type": "input_source_if", "input_sources": [{ "language": "en" }] }],
           "to_if_alone": [{ "key_code": "japanese_kana" }]
-        },
+        }
+      ]
+    },
+    {
+      "description": "13: command(right) to_if_alone toggle eisuu/kana",
+      "manipulators": [
         {
           "type": "basic",
           "from": { "key_code": "right_command" },
